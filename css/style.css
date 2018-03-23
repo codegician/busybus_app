@@ -1,0 +1,63 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F2F2;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 12px;
+  display: block;
+}
+
+h1 {
+  color: #F2F2F2;
+  font-size: 1.8em
+}
+.bus-list h1 {
+  color: #333333;
+  font-weight: 500;
+}
+
+h2 {
+  color: #333333;;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+h3 {
+  color: #333333;;
+  font-size: 1.3em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: #161D6E;
+  width: 100%
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+}
+
+.fa-angle-left {
+  float: left;
+  width: 20%;
+}
+
+.fa-cog {
+  float: right;
+  width: 20%
+}
+
+.bus-list {
+  width: 100%;
+
+}
+/* Icon styling*/
+.fa-angle-left , .fa-cog {
+  font-size:25px;
+  color:#F2F2F2;
+
+}
