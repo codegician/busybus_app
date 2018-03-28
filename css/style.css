@@ -1,63 +1,187 @@
+/*background stying*/
 *, *:before, *:after {
   box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+  overflow-y: hidden;
 }
 
 body {
   background-color: #F2F2F2;
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 12px;
-  display: block;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  width: 360px;
 }
 
+/* font styling */
 h1 {
   color: #F2F2F2;
-  font-size: 1.8em
+  font-size: 2em
 }
 .bus-list h1 {
   color: #333333;
   font-weight: 500;
+  line-height: 1.4em;
 }
 
-h2 {
-  color: #333333;;
-  font-size: 1.6em;
+.bus-number {
+  color: #333333;
+  display: inline;
+  font-size: 2em;
   font-weight: 500;
+  width: 15%
 }
-h3 {
-  color: #333333;;
-  font-size: 1.3em;
+.bus-station {
+  color: #333333;
+  display: inline;
+  font-weight:400;
+  font-size: 1.8em;
+  width: 15%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.frequency {
+  color: #333333;
+  font-size: 1.8em;
+  float: right;
 }
 
-.header {
+/* header */
+
+.android {
   background-color: #161D6E;
-  width: 100%
   margin: 0 auto;
-  padding: 20px 10px 10px 10px;
+  padding: 10px ;
   text-align: center;
+}
+
+.status-bar {
+  display: block;
+  padding-bottom: 20px;
 }
 
 .fa-angle-left {
   float: left;
-  width: 20%;
+  display: inline;
+  width: 50px;
+}
+
+.address {
+  display: inline;
 }
 
 .fa-cog {
   float: right;
-  width: 20%
+  display: inline;
+  width: 60px;
 }
+/* map image */
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  border-bottom: 1px solid #BDBDBD;
+  border-left: 1px solid #BDBDBD;
+  border-right: 1px solid #BDBDBD;
+}
+
+/* bus schedule */
 
 .bus-list {
-  width: 100%;
+  background-color: #F2F2F2;
+  border-left: 1px solid #BDBDBD;
+  border-right:1px solid #BDBDBD;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.south, .north, .east, .reroute, .no-service {
+  border-bottom: 1px solid #BDBDBD;
+  padding: 10px 30px 4px 30px;
+}
+
+
+/* Southbound */
+
+.south .fa-arrow-alt-circle-right {
+   color: #FF5722;
+   font-size: 20px;
+   float: left;
+   width: 25px;
+ }
+
+ /* Northbound */
+
+.north .fa-arrow-alt-circle-right {
+  color: #2196F3;
+  font-size: 20px;
+  float: left;
+  width: 25px;
+}
+
+  /* Eastbound */
+
+.east .fa-arrow-alt-circle-right {
+  color: #4CAF50;
+  font-size: 20px;
+  float: left;
+  width: 25px;
+}
+
+/* Reroute */
+
+.reroute .fa-random {
+  color: #828282;
+  font-size: 20px;
+  float: left;
+  width: 25px;
+}
+
+/* no service */
+
+.no-service .fa-times-circle {
+  color: #FF5722;
+  font-size: 20px;
+  float: left;
+  width: 25px;
+}
+
+/* Bottom navigation */
+.bottom-nav-bar {
+background-color: #161D6E;
+color: #F2F2F2;
+padding: 10px 20px 4px 20px;
+width: 100%;
+height: 65px;
+}
+
+.fa-search, .fa-location-arrow, .fa-star, .fa-user {
+  float: left;
+  padding-right: 5px;
+  /*background-color: orange;*/
 
 }
+
+.nav {
+  /*background-color: red;*/
+  display: inline;
+  float: left;
+  font-size: 1.3em;
+  font-weight: 200;
+  margin-right: 5px;
+  padding-top: 35px;
+
+
+}
+
 /* Icon styling*/
-.fa-angle-left , .fa-cog {
-  font-size:25px;
-  color:#F2F2F2;
+.fa-angle-left , .fa-cog , .fa-search, .fa-location-arrow, .fa-star, .fa-user {
+  color: #F2F2F2;
+  font-size: 25px;
 
 }

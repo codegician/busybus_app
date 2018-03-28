@@ -2,66 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BusyBus</title>
+    <title>BusyBus App</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
     integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="status-bar">
-      <img src="images/status_bar.png" alt="Android status bar">
-    </div>
-    <div class="header">
-      <i class="fa fa-angle-left"></i><
-      <h1>Washington & State Street</h1>
+    <!--status bar, navigation-->
+  <section class="android">
+    <header>
+      <img src="images/status_bar.png" alt="status bar" class="status-bar">
+      <i class="fa fa-angle-left"></i>
+      <h1 class="address"> Washington & State Street</h1>
       <i class="fa fa-cog"></i>
-    </div>
+    </header>
+    <!--map -->
+  </section>
     <div class="map">
-      <img src="images/map.png" alt="Google Map">
+      <img src="images/map2.png" alt="Google Map">
     </div>
+    <!-- bus schedule -->
     <section class="bus-list">
       <ul class="south">
         <li><i class="fa fa-arrow-alt-circle-right"></i></li>
         <li><h1>Southbound</h1></li>
+        <li>
+          <span class="bus-number">B35</span>
+          <span class="bus-station"> Utana/Flatbaird</span>
+          <span class="frequency"> Every 10 mins</span>
+        </li>
       </ul>
-      <ul class="b35">
-        <li><h2>B35</h2></li>
-        <li><h3>Utana/Flatbaird</h3></li>
-        <li><h3>Every 10 mins</h3></li>
-      </ul>
-        <li><i class="fa fa-arrow-alt-circle-right"> </i>
+      <ul class="north">
+        <li><i class="fa fa-arrow-alt-circle-right"></i></li>
         <h1>Northbound</h1></li>
-      <ul>
-        <li class="bus-number-2"> B15</li>
-        <li><h3>Gates/Hawthorne</h3></li>
-        <li><h3>Every 20 mins</h3></li>
+        <li>
+          <span class="bus-number">B15</span>
+          <span class="bus-station"> Gates/Hawthorne</span>
+          <span class="frequency"> Every 20 mins</span>
+        </li>
       </ul>
+      <ul class="east">
         <li><i class="fa fa-arrow-alt-circle-right"></i><h1>Eastbound</h1></li>
-      <ul>
-        <li class="bus-number-3"> B2</li>
-        <li><h3>Glenrod/Canarset</h3></li>
-        <li><h3>Every 15 mins</h3></li>
+        <li>
+          <span class="bus-number">B22</span>
+          <span class="bus-station"> Glenrod/Canarset</span>
+          <span class="frequency"> Every 15 mins</span>
+        </li>
       </ul>
+      <ul class="reroute">
         <li><i class="fas fa-random"></i><h1>Reroute</h1></li>
-      <ul>
-        <li class="bus-number-4">B12</li>
-        <li><h3>Empire City</h3></li>
-        <li><h3>NA</h3></li>
+        <li>
+          <span class="bus-number">B12</span>
+          <span class="bus-station"> Lonergan</span>
+          <span class="frequency"> NA</span>
+        </li>
       </ul>
-        <li><i class="fa fa-arrow-alt-circle-right"></i><h1>Out of Service</h1></li>
-      <ul>
-        <li><h3>Resumes at 12:00pm</h3></li>
+      <ul class="no-service">
+        <li><i class="fas fa-times-circle"></i><h1>Out of Service</h1></li>
+        <li>
+        <!--<span class="frequency">Resumes at 12:00pm</span>-->
+      </li>
       </ul>
     </section>
+    <!-- Bottom Navigation Bar -->
     <section class="bottom-nav-bar">
         <ul>
-          <li><i class="fas fa-search"></i> Search</li>
-          <li><i class="fas fa-location-arrow"></i> Location</li>
-          <li><i class="fas fa-star"></i> Favorites</li>
-          <li><i class="fas fa-user"></i> Sign In</li>
+          <li><i class="fas fa-search"></i></li>
+          <li><span class="nav">Search</span></li>
+          <li><i class="fas fa-location-arrow"></i></li>
+          <li><span class="nav"> Location</span></li>
+          <li><i class="fas fa-star"></i></li>
+          <li> <span class="nav">Favorites</span></li>
+          <li><i class="fas fa-user"></i></li>
+          <li><span class="nav"> Sign In</span></li>
         </ul>
     </section>
   </body>
